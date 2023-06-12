@@ -17,7 +17,7 @@ function Nav() {
               {" "}
               <Logo>
                 <Link to="/home">
-                  <Image src={require("../assets/images/logo.webp")} />
+                  <Image src={require("../assets/images/logo.png")} />
                 </Link>
               </Logo>
               <Button onClick={() => handleLogout()}>
@@ -28,7 +28,7 @@ function Nav() {
             <>
               <Logo>
                 <Link to="/auth/login/">
-                  <Image src={require("../assets/images/logo.webp")} />
+                  <Image src={require("../assets/images/logo.png")} />
                 </Link>
               </Logo>
               <Button>
