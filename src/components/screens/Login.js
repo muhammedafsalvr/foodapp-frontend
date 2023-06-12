@@ -48,9 +48,11 @@ function Login() {
         <LeftContainer>
           <HeaderContainer></HeaderContainer>
           <MainHeading>
+          
+          
             {" "}
-            Explore the best food recipes from diffrent publishers
           </MainHeading>
+          
         </LeftContainer>
         <RightContainer>
           <LoginContainer>
@@ -90,7 +92,7 @@ export default Login;
 const Container = styled.div`
   min-height: 100vh;
   display: flex;
-  padding: 15px;
+  padding: 30px;
 `;
 const LeftContainer = styled.div`
   width: 55%;
@@ -106,7 +108,7 @@ const MainHeading = styled.h1`
   line-height: 1.4em;
 `;
 const RightContainer = styled.div`
-  background: rgba(255, 102, 0, 0.117);
+  background: #f1d15e;
   width: 45%;
   display: flex;
   align-items: flex-end;
@@ -120,8 +122,8 @@ const LoginContainer = styled.div`
   width: 100%;
 `;
 const LoginHeading = styled.h3`
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
   margin-bottom: 20px;
 `;
 const LoginInfo = styled.p`
@@ -151,16 +153,16 @@ const LoginButton = styled(Link)`
   display: flex;
   justify-content: flex-end;
   margin-bottom: 25px;
-  color: rgb(247, 1, 66);
+  color: #000;
   font-size: 20px;
 `;
 const SubmitButton = styled.button`
-  background: rgb(247, 1, 66);
+  background:#ff6317 ;
   transition: background-color 0.5s ease 0s;
   border: 0;
   outline: 0;
   color: #fff;
-  padding: 25px 40px;
+  padding: 14px 40px;
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
