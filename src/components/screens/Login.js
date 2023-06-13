@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import axios from "axios";
 import { UserContext } from "../../App";
 
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -48,15 +49,16 @@ function Login() {
         <LeftContainer>
           <HeaderContainer></HeaderContainer>
           <MainHeading>
-          
-          
+            <Images src={require("../assets/images/login.png")} />
+
+
             {" "}
           </MainHeading>
-          
+
         </LeftContainer>
         <RightContainer>
           <LoginContainer>
-            <LoginHeading>Login to your Account</LoginHeading>
+            <LoginHeading>Login Or Signup</LoginHeading>
             <LoginInfo>Enter email and password to login</LoginInfo>
             <Form onSubmit={onHandleSubmit}>
               <InputContainer>
@@ -93,20 +95,32 @@ const Container = styled.div`
   min-height: 100vh;
   display: flex;
   padding: 30px;
+  
 `;
 const LeftContainer = styled.div`
-  width: 55%;
   padding: 40px 70px 70px;
 `;
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.image`
 
-const MainHeading = styled.h1`
-  font-size: 50px;
+`;
+const Images = styled.img`
+display: block;
+  width: 100%;
+`;
+
+
+const MainHeading = styled.div`
+    /* font-size: 50px;
   font-style: italic;
   color: #ff6600;
   margin-top: 300px;
-  line-height: 1.4em;
-`;
+  line-height: 1.4em; */
+  
+  `;
+
+
+
+
 const RightContainer = styled.div`
   background: #f1d15e;
   width: 45%;
@@ -114,10 +128,11 @@ const RightContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
   border-radius: 20px;
-  padding: 0 70px 70px;
+  height: 60vh;
+  padding: 0 60px 70px;
 `;
 const LoginContainer = styled.div`
-  padding-bottom: 70px;
+  /* padding-top: 0px; */
   /* border-bottom: 1px solid #fff; */
   width: 100%;
 `;
@@ -129,6 +144,7 @@ const LoginHeading = styled.h3`
 const LoginInfo = styled.p`
   font-size: 18px;
   margin-bottom: 35px;
+  font-style: italic;
 `;
 const Form = styled.form`
   width: 100%;
@@ -141,7 +157,7 @@ const InputContainer = styled.div`
   }
 `;
 const TextInput = styled.input`
-  padding: 20px 25px 20px 30px;
+  padding: 20px 10px 15px 20px;
   width: 100%;
   display: block;
   border: none;
@@ -155,6 +171,7 @@ const LoginButton = styled(Link)`
   margin-bottom: 25px;
   color: #000;
   font-size: 20px;
+  font-weight: bold;
 `;
 const SubmitButton = styled.button`
   background:#ff6317 ;

@@ -8,7 +8,8 @@ function NoMatch() {
         <title>Error</title>
       </Helmet>
       <Container>
-        <Comment>Error 404! Page not found. ⚠️</Comment>
+      <Images src={require("../assets/images/error.png")} />
+
       </Container>
     </>
   );
@@ -17,13 +18,12 @@ function NoMatch() {
 export default NoMatch;
 const Container = styled.div`
   text-align: center;
-  background-color: aliceblue;
+ background-color: orange;
   padding: 90px 0;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 `;
-const Comment = styled.h2`
-  padding-top: 90px;
-  font-size: 24px;
-  color: red;
+const Images = styled.img`
+width: 20%;
+margin: 0 auto;
 `;

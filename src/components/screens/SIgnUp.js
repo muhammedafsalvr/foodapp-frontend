@@ -55,7 +55,10 @@ function Signup() {
         <LeftContainer>
           <HeaderContainer></HeaderContainer>
           <MainHeading>
-            Explore the best food recipes from diffrent publishers{" "}
+          <Images src={require("../assets/images/signup.png")} />
+            
+            {" "}
+            
           </MainHeading>
         </LeftContainer>
         <RightContainer>
@@ -108,30 +111,37 @@ const Container = styled.div`
   padding: 15px;
 `;
 const LeftContainer = styled.div`
-  width: 55%;
+  width: 30%;
   padding: 40px 70px 70px;
 `;
 const HeaderContainer = styled.div``;
 const MainHeading = styled.h1`
-  font-size: 50px;
+  /* font-size: 50px;
   font-style: italic;
   color: #ff6600;
   margin-top: 300px;
-  line-height: 1.4em;
+  line-height: 1.4em; */
+`;
+const Images = styled.img`
+display: block;
+  width: 100%;
 `;
 const RightContainer = styled.div`
-  background: rgba(255, 102, 0, 0.117);
+  background: #f1d15e;
   width: 45%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   border-radius: 20px;
-  padding: 0 70px 70px;
+  height: 60vh;
+  padding: 0 60px 70px;
+  
+  
 `;
 const LoginContainer = styled.div`
-  padding-bottom: 70px;
   /* border-bottom: 1px solid #fff; */
   width: 100%;
+  margin-right: 62px;
 `;
 const LoginHeading = styled.h3`
   font-size: 32px;
@@ -141,6 +151,7 @@ const LoginHeading = styled.h3`
 const LoginInfo = styled.p`
   font-size: 18px;
   margin-bottom: 35px;
+  font-style: italic;
 `;
 const Form = styled.form`
   width: 100%;
@@ -165,9 +176,12 @@ const LoginButton = styled(Link)`
   margin-bottom: 25px;
   color: rgb(247, 1, 66);
   font-size: 20px;
+  font-weight: bold;
 `;
 const SubmitButton = styled.button`
-  background: rgb(247, 1, 66);
+    background:#ff6317 ;
+    
+
   transition: background-color 0.5s ease 0s;
   border: 0;
   outline: 0;
@@ -176,6 +190,7 @@ const SubmitButton = styled.button`
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
+  margin-bottom: -50px;
   &:hover {
     background-color: black;
   }
