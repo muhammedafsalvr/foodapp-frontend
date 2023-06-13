@@ -26,7 +26,7 @@ function UpdateRecipie() {
     }
     await axios({
       method: "PUT",
-      url: `http://127.0.0.1:8000/api/v1/foods/update/${ID}/`,
+      url: `http://127.0.0.1:8000/api/v1/food/update/${ID}/`,
       data: formField,
     }).then((response) => {
       console.log(response.data);
